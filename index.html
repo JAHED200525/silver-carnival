@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+<style>
+    body {
+    background-color: #f8f9fa;
+}
+
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Number Guessing Game</h1>
+    <p>Guess a number between 1 and 10</p>
+    <input type="text" id="guessInput" class="form-control mb-3">
+    <button onclick="guessNumber()" class="btn btn-primary mb-3">Guess</button>
+    <p>Chances left: <span id="chancesLeft">3</span></p>
+    <p id="hint"></p>
+    <p id="result"></p>
+    <button onclick="restartGame()" id="restartButton" class="btn btn-primary" style="display:none;">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
